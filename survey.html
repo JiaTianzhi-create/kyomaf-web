@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アンケート | 京まふ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>京まふ アンケート</h1>
+</header>
+
+<div class="container">
+  <p>以下のアンケートにご回答ください。</p>
+
+  <form action="#" method="post">
+    <label for="nationality">国籍：</label><br>
+    <input type="text" id="nationality" name="nationality" required><br><br>
+
+    <label for="age">年齢層：</label><br>
+    <select id="age" name="age">
+      <option value="10代">10代</option>
+      <option value="20代">20代</option>
+      <option value="30代">30代</option>
+      <option value="40代以上">40代以上</option>
+    </select><br><br>
+
+    <label>好きなアニメのジャンル（複数選択可）：</label><br>
+    <input type="checkbox" name="genre" value="アクション"> アクション<br>
+    <input type="checkbox" name="genre" value="恋愛"> 恋愛<br>
+    <input type="checkbox" name="genre" value="SF"> SF<br>
+    <input type="checkbox" name="genre" value="ファンタジー"> ファンタジー<br>
+    <input type="checkbox" name="genre" value="その他"> その他<br><br>
+
+    <label>このようなイベントに参加したことがありますか？</label><br>
+    <input type="radio" name="experience" value="ある"> はい<br>
+    <input type="radio" name="experience" value="ない"> いいえ<br><br>
+
+    <button type="submit">送信</button>
+  </form>
+
+  <p><a href="index.html">← メインページに戻る</a></p>
+</div>
+
+<footer>
+  © 2025 京まふアンケート | 作成者：賈天志
+</footer>
+
+</body>
+</html>
