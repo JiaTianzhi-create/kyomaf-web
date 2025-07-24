@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>アンケート | 京まふ</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>京まふアンケート</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>京まふアンケートフォーム</h1>
+    <form action="https://formspree.io/f/mdkdevly" method="POST">
+        <label>1. 国籍：</label>
+        <select name="nationality" required>
+            <option value="">選択してください</option>
+            <option value="中国">中国</option>
+            <option value="日本">日本</option>
+            <option value="アメリカ">アメリカ</option>
+            <option value="韓国">韓国</option>
+            <option value="イギリス">イギリス</option>
+            <option value="ドイツ">ドイツ</option>
+            <option value="フランス">フランス</option>
+            <option value="その他">その他</option>
+        </select><br><br>
 
-<header>
-  <h1>京まふ アンケート</h1>
-</header>
+        <label>2. 年齢段階：</label>
+        <select name="age" required>
+            <option value="">選択してください</option>
+            <option value="〜12歳">〜12歳</option>
+            <option value="13〜18歳">13〜18歳</option>
+            <option value="19〜25歳">19〜25歳</option>
+            <option value="26〜35歳">26〜35歳</option>
+            <option value="36歳以上">36歳以上</option>
+        </select><br><br>
 
-<div class="container">
-  <p>以下のアンケートにご回答ください。</p>
+        <label>3. 好きなアニメジャンル：</label>
+        <input type="text" name="anime_genre"><br><br>
 
-  <form action="#" method="post">
-    <label for="nationality">国籍：</label><br>
-    <input type="text" id="nationality" name="nationality" required><br><br>
+        <label>4. 京まふに参加したことがありますか？</label><br>
+        <input type="radio" name="participated" value="はい" required> はい
+        <input type="radio" name="participated" value="いいえ"> いいえ<br><br>
 
-    <label for="age">年齢層：</label><br>
-    <select id="age" name="age">
-      <option value="10代">10代</option>
-      <option value="20代">20代</option>
-      <option value="30代">30代</option>
-      <option value="40代以上">40代以上</option>
-    </select><br><br>
+        <label>5. 京まふを知ったきっかけは？</label><br>
+        <select name="how_known" required>
+          <option value="">選択してください</option>
+          <option value="友人・家族からの紹介">友人・家族からの紹介</option>
+          <option value="SNS（X、Instagramなど）">SNS（X、Instagramなど）</option>
+          <option value="テレビや雑誌などのメディア">テレビや雑誌などのメディア</option>
+          <option value="学校・大学の案内">学校・大学の案内</option>
+          <option value="過去に参加したことがある">過去に参加したことがある</option>
+          <option value="その他">その他</option>
+        </select><br><br>
+        
+        <label>6. イベントで特に楽しみにしていることは？（複数選択可）</label><br>
+        <input type="checkbox" name="expected" value="声優トークショー"> 声優トークショー<br>
+        <input type="checkbox" name="expected" value="アニメ展示"> アニメ展示<br>
+        <input type="checkbox" name="expected" value="限定グッズ購入"> 限定グッズ購入<br>
+        <input type="checkbox" name="expected" value="コスプレ撮影"> コスプレ撮影<br>
+        <input type="checkbox" name="expected" value="ステージパフォーマンス"> ステージパフォーマンス<br>
+        <input type="checkbox" name="expected" value="京都観光との連携"> 京都観光との連携<br><br>
 
-    <label>好きなアニメのジャンル（複数選択可）：</label><br>
-    <input type="checkbox" name="genre" value="アクション"> アクション<br>
-    <input type="checkbox" name="genre" value="恋愛"> 恋愛<br>
-    <input type="checkbox" name="genre" value="SF"> SF<br>
-    <input type="checkbox" name="genre" value="ファンタジー"> ファンタジー<br>
-    <input type="checkbox" name="genre" value="その他"> その他<br><br>
+        <label>7. 好きなキャラクター（任意）：</label>
+        <input type="text" name="character"><br><br>
 
-    <label>このようなイベントに参加したことがありますか？</label><br>
-    <input type="radio" name="experience" value="ある"> はい<br>
-    <input type="radio" name="experience" value="ない"> いいえ<br><br>
+        <label>8. 今まで参加したことのあるアニメイベント（複数選択可）：</label><br>
+        <input type="checkbox" name="events" value="コミックマーケット（コミケ）"> コミックマーケット（コミケ）<br>
+        <input type="checkbox" name="events" value="AnimeJapan"> AnimeJapan<br>
+        <input type="checkbox" name="events" value="東京ゲームショウ"> 東京ゲームショウ<br>
+        <input type="checkbox" name="events" value="ワンダーフェスティバル"> ワンダーフェスティバル<br>
+        <input type="checkbox" name="events" value="地方アニメイベント（例：京まふ、名古屋ポップカルチャーフェスなど）"> 地方アニメイベント（京まふ 等）<br>
+        <input type="checkbox" name="events" value="オンラインイベント"> オンラインイベント<br>
+        <input type="checkbox" name="events" value="その他"> その他<br><br>
+        <label>9. 京まふの改善点・ご意見：</label><br>
+        <textarea name="feedback" rows="4" cols="40"></textarea><br><br>
 
-    <button type="submit">送信</button>
-  </form>
+        <label>10. また参加したいと思いますか？</label><br>
+        <input type="radio" name="will_come_again" value="はい" required> はい
+        <input type="radio" name="will_come_again" value="いいえ"> いいえ<br><br>
 
-  <p><a href="index.html">← メインページに戻る</a></p>
-</div>
-
-<footer>
-  © 2025 京まふアンケート | 作成者：賈天志
-</footer>
-
+        <input type="submit" value="送信">
+    </form>
 </body>
 </html>
