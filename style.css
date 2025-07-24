@@ -1,45 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+
 body {
-    font-family: "Segoe UI", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
-  header {
-    background-color: #990000;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 30px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  h2 {
-    color: #990000;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  a {
-    color: #990000;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #eee;
-    font-size: 0.9em;
-    color: #555;
-  }
+  font-family: 'Sawarabi Mincho', 'Yu Mincho', serif;
+  background: url('https://www.transparenttextures.com/patterns/japanese-paper.png');
+  background-color: #fdfaf5;
+  color: #3b2f2f;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #e0cfc1;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 3px solid #c2a686;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #5c3b28;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 800px;
+  background-color: #ffffffcc;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid #decbb7;
+}
+
+h2 {
+  color: #7b5131;
+  border-left: 6px solid #caa36b;
+  padding-left: 10px;
+  margin-top: 30px;
+  font-weight: normal;
+}
+
+ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+p {
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+/* 表单样式 */
+form {
+  max-width: 800px;
+  background-color: #ffffffdd;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #c8b8a6;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+label {
+  font-weight: bold;
+  color: #5c3b28;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cdb7a2;
+  border-radius: 6px;
+  background-color: #fffaf5;
+  font-family: inherit;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+input[type="submit"] {
+  background-color: #b77f5c;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #8f5f3d;
+}
+
+/* 链接样式 */
+a {
+  color: #af5b3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 页脚 */
+footer {
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #5c3b28;
+  background-color: #e9ddd2;
+}
